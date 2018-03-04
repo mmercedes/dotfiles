@@ -1,0 +1,11 @@
+(1
+  (etsy-dbs . [(1 0 1) nil "Open up a shell to all our dbs" single])
+  (etsy-find-resource . [(1 0 3) ((pulse (1 0))) "Quickly jump to the file underneath your point" single])
+  (etsy-github-link . [(1 0 1) nil "Show the etsy github url of the line the point is on" single])
+  (etsy-hound . [(1 1 0) ((hound (1 1 0))) "Etsy configuration of hound" single])
+  (etsy-jshint-rc . [(1 0 0) ((flymake-jshint (20130402 1658))) "The etsy jshint configuration file" single])
+  (etsy-md5 . [(1 0 1) nil "Inserts the latest md5 hash into a msg tag" single])
+  (etsy-msg-wrap . [(1 0 1) nil "Wraps text in a msg tag" single])
+  (etsy-sox-mode-line . [(1 0 3) nil "Show something in the mode-line to indicate when you are viewing a Managed File" tar])
+  (etsy-starter-kit . [(1 0 11) ((flymake-jshint (20130402 1658)) (flymake-cursor (1 0)) (flymake-css (1 0)) (php-mode (20130424 1920)) (rainbow-mode (0 8)) (etsy-dbs (1 0 1)) (etsy-github-link (1 0 1)) (etsy-msg-wrap (1 0 1)) (etsy-find-resource (1 0 2)) (etsy-md5 (1 0 1)) (etsy-yasnippets (1 0 2)) (etsy-hound (1 0 0)) (etsy-sox-mode-line (1 0 1))) "Sensible defaults for getting up and editing the Etsy codebase" single])
+  (etsy-yasnippets . [(1 0 2) ((yasnippet (0 8 0))) "Etsy-specific Yasnippet for php, smarty, etc" tar]))
