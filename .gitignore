@@ -2,3 +2,4 @@
 .emacs.d/backups/*
 .emacs.d/auto-save-list
 .emacs.d/.emacs.desktop
+.emacs.d/.emacs.desktop.lock

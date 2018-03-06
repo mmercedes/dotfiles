@@ -10,12 +10,19 @@ export EDITOR='emacs'
 
 source $ZSH/oh-my-zsh.sh
 
-alias ls='ls -Gah --color=always'
+# mac vs linux exclusives
+if [[ "$(uname -s)" == "Darwin" ]]; then
+    export PATH=/usr/local/bin:$PATH
+    alias ls='ls -Gah'
+else
+    alias ls='ls -Gah --color=always'
+fi
+
 alias e='emacs'
 alias gdiff=gistDiff
 alias dclean=dockerClean
 
-if which kubectl &> /dev/null && 
+if which kubectl &> /dev/null
 then
     source <(kubectl completion zsh)
     alias kc='kubectl'
@@ -31,7 +38,6 @@ function dockerClean()
     docker rm -f $(docker ps -a -q)
     docker rmi -f $(docker images -q)
 }
-eval "$(thefuck --alias)"
 
 export UPDATE_ZSH_DAYS=30
 
