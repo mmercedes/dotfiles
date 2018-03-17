@@ -13,6 +13,7 @@ source $ZSH/oh-my-zsh.sh
 # mac vs linux exclusives
 if [[ "$(uname -s)" == "Darwin" ]]; then
     export PATH=/usr/local/bin:$PATH
+    export GOPATH=$HOME/development/go
     alias ls='ls -Gah'
 else
     alias ls='ls -Gah --color=always'
