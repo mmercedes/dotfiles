@@ -20,8 +20,6 @@ else
 fi
 
 alias e='emacs'
-alias gdiff=gistDiff
-alias dclean=dockerClean
 
 if which kubectl &> /dev/null
 then
@@ -29,12 +27,18 @@ then
     alias kc='kubectl'
 fi
 
-function gistDiff()
+if which git &> /dev/null
+then
+    git config --global alias.st 'status'
+    git config --global alias.rpull 'pull --rebase --stat'
+fi
+
+function gdiff()
 {
     git diff --no-color | gist -t diff
 }
 
-function dockerClean()
+function dclean()
 {
     docker rm -f $(docker ps -a -q)
     docker rmi -f $(docker images -q)
