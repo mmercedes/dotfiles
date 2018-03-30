@@ -6,7 +6,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-export EDITOR='emacs'
+export EDITOR='emacsclient'
 
 source $ZSH/oh-my-zsh.sh
 
@@ -20,6 +20,7 @@ else
 fi
 
 alias e='emacs'
+alias todo='task'
 
 if which kubectl &> /dev/null
 then

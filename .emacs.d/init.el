@@ -117,3 +117,7 @@
   '(progn (set-face-attribute 'flycheck-error nil :foreground "white" :background "red")))
 (eval-after-load "flycheck"
   '(progn (set-face-attribute 'flycheck-warning nil :foreground "black" :background "yellow")))
+
+;; start server mode
+(server-start)
+
