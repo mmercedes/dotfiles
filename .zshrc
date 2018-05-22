@@ -6,7 +6,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-export EDITOR='emacsclient'
+export EDITOR='emacsclient -nw'
 
 source $ZSH/oh-my-zsh.sh
 
@@ -52,4 +52,4 @@ export UPDATE_ZSH_DAYS=30
 
 HIST_STAMPS="dd.mm.yyyy"
 
-plugins=( git zsh-syntax-highlighting)
+plugins=( git zsh-syntax-highlighting )
