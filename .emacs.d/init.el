@@ -92,6 +92,9 @@
 ;; set web mode for .mustach files
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 
+;; set conf mode for .toml files
+(add-to-list 'auto-mode-alist '("\\.toml\\'" . conf-mode))
+
 ;; map C-t to switching to terminal, creating one if none exists
 (defun switch-to-term ()
   "go to console buffer if it exists, otherwise create"

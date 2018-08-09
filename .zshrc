@@ -47,9 +47,19 @@ function dclean()
 
 export UPDATE_ZSH_DAYS=30
 
+function color() {
+    echo -en "\033[31m"  ## red
+    eval $* | while read line; do
+        echo -en "\033[32m"  ## green
+        echo $line
+        echo -en "\033[31m"  ## red
+    done
+    echo -en "\033[0m" 
+}
+
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
 
-HIST_STAMPS="dd.mm.yyyy"
+export HISTTIMEFORMAT='%F %T  '
 
-plugins=( git zsh-syntax-highlighting )
+plugins=( git zsh-syntax-highlighting nyan )
