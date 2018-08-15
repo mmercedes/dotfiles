@@ -31,6 +31,8 @@ fi
 if which git &> /dev/null
 then
     git config --global alias.st 'status'
+    git config --global alias.d 'diff'
+    git config --global alias.ds 'diff --staged'
     git config --global alias.rpull 'pull --rebase --stat'
 fi
 
