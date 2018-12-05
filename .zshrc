@@ -59,9 +59,13 @@ function color() {
     echo -en "\033[0m" 
 }
 
+ 
+# TODO implement this
+# emacsclient --insert <(<command>)
+
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
 
 export HISTTIMEFORMAT='%F %T  '
 
-plugins=( git zsh-syntax-highlighting nyan )
+plugins=( git zsh-syntax-highlighting )
