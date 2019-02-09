@@ -5,8 +5,8 @@
 
 ;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/seq-2.20/seq-24.el"
 ;;;;;;  "../../../../.emacs.d/elpa/seq-2.20/seq-25.el" "../../../../.emacs.d/elpa/seq-2.20/seq-pkg.el"
-;;;;;;  "../../../../.emacs.d/elpa/seq-2.20/seq.el") (23647 18701
-;;;;;;  10780 93000))
+;;;;;;  "../../../../.emacs.d/elpa/seq-2.20/seq.el") (23647 21492
+;;;;;;  474487 882000))
 
 ;;;***
 

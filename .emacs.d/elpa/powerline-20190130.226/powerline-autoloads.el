@@ -4,9 +4,9 @@
 
 
 ;;;### (autoloads (powerline-fill powerline-raw defpowerline powerline-concat
-;;;;;;  powerline-mouse powerline-hud) "powerline" "powerline.el"
-;;;;;;  (23647 18706 470870 575000))
-;;; Generated autoloads from powerline.el
+;;;;;;  powerline-mouse powerline-hud) "powerline" "../../../../.emacs.d/elpa/powerline-20190130.226/powerline.el"
+;;;;;;  "085f3fc119b62568dc874ebacc268944")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/powerline-20190130.226/powerline.el
 
 (autoload 'powerline-hud "powerline" "\
 Return an XPM of relative buffer location using FACE1 and FACE2 of optional WIDTH.
@@ -50,9 +50,9 @@ Return empty space using FACE and leaving RESERVE space on the right.
 ;;;***
 
 ;;;### (autoloads (powerline-nano-theme powerline-vim-theme powerline-center-theme
-;;;;;;  powerline-default-theme) "powerline-themes" "powerline-themes.el"
-;;;;;;  (23647 18706 473870 571000))
-;;; Generated autoloads from powerline-themes.el
+;;;;;;  powerline-default-theme) "powerline-themes" "../../../../.emacs.d/elpa/powerline-20190130.226/powerline-themes.el"
+;;;;;;  "aa82b401d6549bfa904b4f93d0c2d0f5")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/powerline-20190130.226/powerline-themes.el
 
 (autoload 'powerline-default-theme "powerline-themes" "\
 Setup the default mode-line.
@@ -76,8 +76,11 @@ Setup a nano-like mode-line.
 
 ;;;***
 
-;;;### (autoloads nil nil ("powerline-pkg.el" "powerline-separators.el")
-;;;;;;  (23647 18706 480811 910000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/powerline-20190130.226/powerline-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/powerline-20190130.226/powerline-separators.el"
+;;;;;;  "../../../../.emacs.d/elpa/powerline-20190130.226/powerline-themes.el"
+;;;;;;  "../../../../.emacs.d/elpa/powerline-20190130.226/powerline.el")
+;;;;;;  (23647 21498 556960 714000))
 
 ;;;***
 

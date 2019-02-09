@@ -4,8 +4,9 @@
 
 
 ;;;### (autoloads (go-download-play godoc gofmt-before-save go-mode)
-;;;;;;  "go-mode" "go-mode.el" (23647 18703 558874 981000))
-;;; Generated autoloads from go-mode.el
+;;;;;;  "go-mode" "../../../../.emacs.d/elpa/go-mode-20181012.329/go-mode.el"
+;;;;;;  "d1e4e6e77382c7de41c7bec9c1018e72")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/go-mode-20181012.329/go-mode.el
 
 (autoload 'go-mode "go-mode" "\
 Major mode for editing Go source text.
@@ -96,8 +97,9 @@ Tries to look for a URL at point.
 
 ;;;***
 
-;;;### (autoloads nil nil ("go-mode-pkg.el") (23647 18703 563605
-;;;;;;  724000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/go-mode-20181012.329/go-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/go-mode-20181012.329/go-mode.el")
+;;;;;;  (23647 21495 187813 827000))
 
 ;;;***
 

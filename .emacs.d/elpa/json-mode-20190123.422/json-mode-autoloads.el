@@ -4,9 +4,9 @@
 
 
 ;;;### (autoloads (json-mode-beautify json-mode-kill-path json-mode-show-path
-;;;;;;  json-mode json-mode-auto-mode-list) "json-mode" "json-mode.el"
-;;;;;;  (23647 18704 825873 64000))
-;;; Generated autoloads from json-mode.el
+;;;;;;  json-mode json-mode-auto-mode-list) "json-mode" "../../../../.emacs.d/elpa/json-mode-20190123.422/json-mode.el"
+;;;;;;  "9271efb2321054fc42d3f566e27e5e95")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/json-mode-20190123.422/json-mode.el
 
 (defconst json-mode-standard-file-ext '(".json" ".jsonld") "\
 List of JSON file extensions.")
@@ -53,8 +53,9 @@ Beautify / pretty-print the active region (or the entire buffer if no active reg
 
 ;;;***
 
-;;;### (autoloads nil nil ("json-mode-pkg.el") (23647 18704 830813
-;;;;;;  597000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/json-mode-20190123.422/json-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/json-mode-20190123.422/json-mode.el")
+;;;;;;  (23647 21496 619580 831000))
 
 ;;;***
 

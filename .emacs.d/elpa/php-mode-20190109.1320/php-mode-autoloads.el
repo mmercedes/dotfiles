@@ -4,9 +4,9 @@
 
 
 ;;;### (autoloads (php-current-namespace php-current-class php-mode
-;;;;;;  php-faces php-mode php) "php-mode" "php-mode.el" (23647 18705
-;;;;;;  396872 200000))
-;;; Generated autoloads from php-mode.el
+;;;;;;  php-faces php-mode php) "php-mode" "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-mode.el"
+;;;;;;  "5ac59de42e14c07345f295f548542bd0")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/php-mode-20190109.1320/php-mode.el
 
 (let ((loads (get 'php 'custom-loads))) (if (member '"php-mode" loads) nil (put 'php 'custom-loads (cons '"php-mode" loads))))
 
@@ -40,8 +40,9 @@ Insert current namespace if cursor in namespace context.
 ;;;***
 
 ;;;### (autoloads (php-project-get-root-dir php-project-get-bootstrap-scripts)
-;;;;;;  "php-project" "php-project.el" (23647 18705 371872 238000))
-;;; Generated autoloads from php-project.el
+;;;;;;  "php-project" "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-project.el"
+;;;;;;  "713a67900256bf2d899fc6d91d5e57f3")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/php-mode-20190109.1320/php-project.el
 
 (defvar-local php-project-root 'auto "\
 Method of searching for the top level directory.
@@ -131,12 +132,29 @@ Return path to current PHP project.
 
 ;;;***
 
-;;;### (autoloads nil nil ("php-array.el" "php-classobj.el" "php-control-structures.el"
-;;;;;;  "php-crack.el" "php-dio.el" "php-dom.el" "php-exceptions.el"
-;;;;;;  "php-exif.el" "php-ext.el" "php-filesystem.el" "php-gd.el"
-;;;;;;  "php-math.el" "php-mode-pkg.el" "php-pcre.el" "php-regex.el"
-;;;;;;  "php-simplexml.el" "php-strings.el" "php-var.el" "php-xmlparser.el"
-;;;;;;  "php-xmlreader.el") (23647 18705 403291 171000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/php-mode-20190109.1320/php-array.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-classobj.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-control-structures.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-crack.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-dio.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-dom.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-exceptions.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-exif.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-ext.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-filesystem.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-gd.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-math.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-mode.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-pcre.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-project.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-regex.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-simplexml.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-strings.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-var.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-xmlparser.el"
+;;;;;;  "../../../../.emacs.d/elpa/php-mode-20190109.1320/php-xmlreader.el")
+;;;;;;  (23647 21497 256799 646000))
 
 ;;;***
 

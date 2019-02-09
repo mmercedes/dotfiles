@@ -4,9 +4,9 @@
 
 
 ;;;### (autoloads (python-docstring-install python-docstring-mode
-;;;;;;  python-docstring-fill) "python-docstring" "python-docstring.el"
-;;;;;;  (23647 18706 841870 13000))
-;;; Generated autoloads from python-docstring.el
+;;;;;;  python-docstring-fill) "python-docstring" "../../../../.emacs.d/elpa/python-docstring-20170508.856/python-docstring.el"
+;;;;;;  "8c6fba9d97ce565446b59f901f1b7559")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/python-docstring-20170508.856/python-docstring.el
 
 (autoload 'python-docstring-fill "python-docstring" "\
 Wrap Python docstrings as epytext or ReStructured Text.
@@ -28,8 +28,9 @@ Add python-docstring-mode as a hook to python.mode.
 
 ;;;***
 
-;;;### (autoloads nil nil ("python-docstring-pkg.el") (23647 18706
-;;;;;;  843674 573000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/python-docstring-20170508.856/python-docstring-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/python-docstring-20170508.856/python-docstring.el")
+;;;;;;  (23647 21498 941622 462000))
 
 ;;;***
 

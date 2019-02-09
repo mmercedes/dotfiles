@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (groovy-electric-mode) "groovy-electric" "groovy-electric.el"
-;;;;;;  (23647 18704 26874 273000))
-;;; Generated autoloads from groovy-electric.el
+;;;### (autoloads (groovy-electric-mode) "groovy-electric" "../../../../.emacs.d/elpa/groovy-mode-20181111.1057/groovy-electric.el"
+;;;;;;  "f7d988eba5b18cbee49944e18435f269")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/groovy-mode-20181111.1057/groovy-electric.el
 
 (autoload 'groovy-electric-mode "groovy-electric" "\
 Toggle Groovy Electric minor mode.
@@ -22,9 +22,9 @@ have Font Lock enabled. ${ } is expanded when in a GString
 
 ;;;***
 
-;;;### (autoloads (groovy-mode) "groovy-mode" "groovy-mode.el" (23647
-;;;;;;  18704 28874 270000))
-;;; Generated autoloads from groovy-mode.el
+;;;### (autoloads (groovy-mode) "groovy-mode" "../../../../.emacs.d/elpa/groovy-mode-20181111.1057/groovy-mode.el"
+;;;;;;  "c1a37941eb4d5256b63d7b1d39bc8b0c")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/groovy-mode-20181111.1057/groovy-mode.el
 
 (add-to-list 'auto-mode-alist '("\\.g\\(?:ant\\|roovy\\|radle\\)\\'" . groovy-mode))
 
@@ -46,8 +46,9 @@ Key bindings:
 ;;;***
 
 ;;;### (autoloads (run-groovy inferior-groovy-mode inf-groovy-keys)
-;;;;;;  "inf-groovy" "inf-groovy.el" (23647 18704 24874 276000))
-;;; Generated autoloads from inf-groovy.el
+;;;;;;  "inf-groovy" "../../../../.emacs.d/elpa/groovy-mode-20181111.1057/inf-groovy.el"
+;;;;;;  "e37d4a4a52aff797b7ac53f6bcd85c02")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/groovy-mode-20181111.1057/inf-groovy.el
 
 (autoload 'inf-groovy-keys "inf-groovy" "\
 Set local key defs for inf-groovy in groovy-mode
@@ -107,8 +108,11 @@ process buffer for a list of commands.
 
 ;;;***
 
-;;;### (autoloads nil nil ("groovy-mode-pkg.el") (23647 18704 31462
-;;;;;;  811000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/groovy-mode-20181111.1057/groovy-electric.el"
+;;;;;;  "../../../../.emacs.d/elpa/groovy-mode-20181111.1057/groovy-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/groovy-mode-20181111.1057/groovy-mode.el"
+;;;;;;  "../../../../.emacs.d/elpa/groovy-mode-20181111.1057/inf-groovy.el")
+;;;;;;  (23647 21495 726692 422000))
 
 ;;;***
 

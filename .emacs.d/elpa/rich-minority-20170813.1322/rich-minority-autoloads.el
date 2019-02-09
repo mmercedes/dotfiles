@@ -4,8 +4,9 @@
 
 
 ;;;### (autoloads (rich-minority-mode rm--mode-list-as-string-list)
-;;;;;;  "rich-minority" "rich-minority.el" (23647 18707 17869 747000))
-;;; Generated autoloads from rich-minority.el
+;;;;;;  "rich-minority" "../../../../.emacs.d/elpa/rich-minority-20170813.1322/rich-minority.el"
+;;;;;;  "e189190f5d4bcecb05247d1fc960d8d7")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/rich-minority-20170813.1322/rich-minority.el
 
 (autoload 'rm--mode-list-as-string-list "rich-minority" "\
 Return `minor-mode-list' as a simple list of strings.
@@ -32,8 +33,9 @@ the mode if ARG is omitted or nil, and toggle it if ARG is `toggle'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("rich-minority-pkg.el") (23647 18707 23190
-;;;;;;  911000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/rich-minority-20170813.1322/rich-minority-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/rich-minority-20170813.1322/rich-minority.el")
+;;;;;;  (23647 21499 137383 551000))
 
 ;;;***
 

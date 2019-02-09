@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (json-reformat-region) "json-reformat" "json-reformat.el"
-;;;;;;  (23647 18704 647873 333000))
-;;; Generated autoloads from json-reformat.el
+;;;### (autoloads (json-reformat-region) "json-reformat" "../../../../.emacs.d/elpa/json-reformat-20160212.853/json-reformat.el"
+;;;;;;  "31f3c6e6a2c0562e703fd72514fc30d4")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/json-reformat-20160212.853/json-reformat.el
 
 (autoload 'json-reformat-region "json-reformat" "\
 Reformat the JSON in the specified region.
@@ -18,8 +18,9 @@ and `json-reformat:pretty-string?'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("json-reformat-pkg.el") (23647 18704 652265
-;;;;;;  206000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/json-reformat-20160212.853/json-reformat-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/json-reformat-20160212.853/json-reformat.el")
+;;;;;;  (23647 21496 440356 526000))
 
 ;;;***
 

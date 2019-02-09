@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (terraform-mode) "terraform-mode" "terraform-mode.el"
-;;;;;;  (23647 18708 477867 537000))
-;;; Generated autoloads from terraform-mode.el
+;;;### (autoloads (terraform-mode) "terraform-mode" "../../../../.emacs.d/elpa/terraform-mode-20170112.517/terraform-mode.el"
+;;;;;;  "bd92352b52ce8a455c354e5b3bcc6d7f")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/terraform-mode-20170112.517/terraform-mode.el
 
 (autoload 'terraform-mode "terraform-mode" "\
 Major mode for editing terraform configuration file
@@ -16,8 +16,9 @@ Major mode for editing terraform configuration file
 
 ;;;***
 
-;;;### (autoloads nil nil ("terraform-mode-pkg.el") (23647 18708
-;;;;;;  482143 401000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/terraform-mode-20170112.517/terraform-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/terraform-mode-20170112.517/terraform-mode.el")
+;;;;;;  (23647 21500 907815 46000))
 
 ;;;***
 

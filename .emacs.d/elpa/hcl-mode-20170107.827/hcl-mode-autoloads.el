@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (hcl-mode) "hcl-mode" "hcl-mode.el" (23647 18704
-;;;;;;  315873 836000))
-;;; Generated autoloads from hcl-mode.el
+;;;### (autoloads (hcl-mode) "hcl-mode" "../../../../.emacs.d/elpa/hcl-mode-20170107.827/hcl-mode.el"
+;;;;;;  "f204d2b063a91a73e4dd9974aa28f9d3")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/hcl-mode-20170107.827/hcl-mode.el
 
 (autoload 'hcl-mode "hcl-mode" "\
 Major mode for editing hcl configuration file
@@ -18,8 +18,9 @@ Major mode for editing hcl configuration file
 
 ;;;***
 
-;;;### (autoloads nil nil ("hcl-mode-pkg.el") (23647 18704 320589
-;;;;;;  242000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/hcl-mode-20170107.827/hcl-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/hcl-mode-20170107.827/hcl-mode.el")
+;;;;;;  (23647 21496 6045 565000))
 
 ;;;***
 

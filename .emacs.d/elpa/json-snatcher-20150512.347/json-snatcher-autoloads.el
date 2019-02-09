@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (jsons-print-path) "json-snatcher" "json-snatcher.el"
-;;;;;;  (23647 18704 472873 599000))
-;;; Generated autoloads from json-snatcher.el
+;;;### (autoloads (jsons-print-path) "json-snatcher" "../../../../.emacs.d/elpa/json-snatcher-20150512.347/json-snatcher.el"
+;;;;;;  "308ed7c1d4c90bce864766934c6d48a9")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/json-snatcher-20150512.347/json-snatcher.el
 
 (autoload 'jsons-print-path "json-snatcher" "\
 Print the path to the JSON value under point, and save it in the kill ring.
@@ -14,8 +14,9 @@ Print the path to the JSON value under point, and save it in the kill ring.
 
 ;;;***
 
-;;;### (autoloads nil nil ("json-snatcher-pkg.el") (23647 18704 477548
-;;;;;;  405000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/json-snatcher-20150512.347/json-snatcher-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/json-snatcher-20150512.347/json-snatcher.el")
+;;;;;;  (23647 21496 224241 101000))
 
 ;;;***
 

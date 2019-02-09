@@ -4,9 +4,9 @@
 
 
 ;;;### (autoloads (dockerfile-mode dockerfile-build-no-cache-buffer
-;;;;;;  dockerfile-build-buffer) "dockerfile-mode" "dockerfile-mode.el"
-;;;;;;  (23647 18700 476879 647000))
-;;; Generated autoloads from dockerfile-mode.el
+;;;;;;  dockerfile-build-buffer) "dockerfile-mode" "../../../../.emacs.d/elpa/dockerfile-mode-20181104.1800/dockerfile-mode.el"
+;;;;;;  "243de13f908733a5e9b1d5272b9102d5")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/dockerfile-mode-20181104.1800/dockerfile-mode.el
 
 (autoload 'dockerfile-build-buffer "dockerfile-mode" "\
 Build an image called IMAGE-NAME based upon the buffer.
@@ -29,8 +29,9 @@ A major mode to edit Dockerfiles.
 
 ;;;***
 
-;;;### (autoloads nil nil ("dockerfile-mode-pkg.el") (23647 18700
-;;;;;;  480824 120000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/dockerfile-mode-20181104.1800/dockerfile-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/dockerfile-mode-20181104.1800/dockerfile-mode.el")
+;;;;;;  (23647 21492 30994 591000))
 
 ;;;***
 

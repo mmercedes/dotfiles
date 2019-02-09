@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (yaml-mode yaml) "yaml-mode" "yaml-mode.el" (23647
-;;;;;;  18710 12865 214000))
-;;; Generated autoloads from yaml-mode.el
+;;;### (autoloads (yaml-mode yaml) "yaml-mode" "../../../../.emacs.d/elpa/yaml-mode-20180409.607/yaml-mode.el"
+;;;;;;  "84b5c4f2fdd19d852201888ddf43b64e")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/yaml-mode-20180409.607/yaml-mode.el
 
 (let ((loads (get 'yaml 'custom-loads))) (if (member '"yaml-mode" loads) nil (put 'yaml 'custom-loads (cons '"yaml-mode" loads))))
 
@@ -20,8 +20,9 @@ Simple mode to edit YAML.
 
 ;;;***
 
-;;;### (autoloads nil nil ("yaml-mode-pkg.el") (23647 18710 16905
-;;;;;;  955000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/yaml-mode-20180409.607/yaml-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/yaml-mode-20180409.607/yaml-mode.el")
+;;;;;;  (23647 21502 456817 625000))
 
 ;;;***
 

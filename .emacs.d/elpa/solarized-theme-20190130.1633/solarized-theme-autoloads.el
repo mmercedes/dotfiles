@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (solarized-color-blend) "solarized" "solarized.el"
-;;;;;;  (23647 18708 179867 988000))
-;;; Generated autoloads from solarized.el
+;;;### (autoloads (solarized-color-blend) "solarized" "../../../../.emacs.d/elpa/solarized-theme-20190130.1633/solarized.el"
+;;;;;;  "0a3b9840056d8fefbb41ac382c8d88fd")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/solarized-theme-20190130.1633/solarized.el
 
 (autoload 'solarized-color-blend "solarized" "\
 Blends COLOR1 onto COLOR2 with ALPHA.
@@ -21,9 +21,13 @@ Alpha should be a float between 0 and 1.
 
 ;;;***
 
-;;;### (autoloads nil nil ("solarized-dark-theme.el" "solarized-light-theme.el"
-;;;;;;  "solarized-theme-pkg.el" "solarized-theme-utils.el" "solarized-theme.el")
-;;;;;;  (23647 18708 186892 935000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/solarized-theme-20190130.1633/solarized-dark-theme.el"
+;;;;;;  "../../../../.emacs.d/elpa/solarized-theme-20190130.1633/solarized-light-theme.el"
+;;;;;;  "../../../../.emacs.d/elpa/solarized-theme-20190130.1633/solarized-theme-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/solarized-theme-20190130.1633/solarized-theme-utils.el"
+;;;;;;  "../../../../.emacs.d/elpa/solarized-theme-20190130.1633/solarized-theme.el"
+;;;;;;  "../../../../.emacs.d/elpa/solarized-theme-20190130.1633/solarized.el")
+;;;;;;  (23647 21500 591043 750000))
 
 ;;;***
 
