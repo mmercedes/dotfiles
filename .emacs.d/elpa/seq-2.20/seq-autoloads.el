@@ -3,8 +3,10 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("seq-24.el" "seq-25.el" "seq-pkg.el" "seq.el")
-;;;;;;  (23189 35541 593000 758000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/seq-2.20/seq-24.el"
+;;;;;;  "../../../../.emacs.d/elpa/seq-2.20/seq-25.el" "../../../../.emacs.d/elpa/seq-2.20/seq-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/seq-2.20/seq.el") (23647 18701
+;;;;;;  10780 93000))
 
 ;;;***
 

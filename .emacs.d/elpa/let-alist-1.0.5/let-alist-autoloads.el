@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (let-alist) "let-alist" "let-alist.el" (23189 35546
-;;;;;;  207797 557000))
-;;; Generated autoloads from let-alist.el
+;;;### (autoloads (let-alist) "let-alist" "../../../../.emacs.d/elpa/let-alist-1.0.5/let-alist.el"
+;;;;;;  "2b3d36eb5b2aa7fc9dfcdbef2e1698e5")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/let-alist-1.0.5/let-alist.el
 
 (autoload 'let-alist "let-alist" "\
 Let-bind dotted symbols to their cdrs in ALIST and execute BODY.
@@ -42,8 +42,9 @@ displayed in the example above.
 
 ;;;***
 
-;;;### (autoloads nil nil ("let-alist-pkg.el") (23189 35546 211826
-;;;;;;  52000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/let-alist-1.0.5/let-alist-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/let-alist-1.0.5/let-alist.el")
+;;;;;;  (23647 18701 530515 999000))
 
 ;;;***
 
