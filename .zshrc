@@ -17,6 +17,7 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
     alias ls='ls -Gah'
 else
     alias ls='ls -Gah --color=always'
+    export GREP_OPTIONS='--exclude=*.pyc --exclude-dir=.git'
 fi
 
 alias e='emacs'

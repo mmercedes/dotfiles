@@ -40,6 +40,7 @@
         json-mode
         json-reformat
         json-snatcher
+        jsonnet-mode
         let-alist
         php-mode
         pkg-info
@@ -94,6 +95,8 @@
   '(progn (set-face-attribute 'flycheck-error nil :foreground "white" :background "red")))
 (eval-after-load "flycheck"
   '(progn (set-face-attribute 'flycheck-warning nil :foreground "black" :background "yellow")))
+(eval-after-load "flycheck"
+  '(setq flycheck-python-pylint-executable "python3"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; UI                                                ;;
