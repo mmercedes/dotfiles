@@ -4,9 +4,11 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+export ZSH_THEME="robbyrussell"
 
 export EDITOR='emacsclient -nw'
+
+export DISABLE_UNTRACKED_FILES_DIRTY='true'
 
 source $ZSH/oh-my-zsh.sh
 
