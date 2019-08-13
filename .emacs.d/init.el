@@ -28,7 +28,8 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 
 (setq package-list
-      '(dash
+      '(bazel-mode
+        dash
         dockerfile-mode
         epl
         flycheck
@@ -80,6 +81,8 @@
 
 ;; set conf mode for .toml files
 (add-to-list 'auto-mode-alist '("\\.toml\\'" . conf-mode))
+
+(add-to-list 'auto-mode-alist '("\\.bazel\\'" . bazel-mode))
 
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
