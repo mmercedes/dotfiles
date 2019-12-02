@@ -39,6 +39,13 @@ then
     git config --global alias.rpull 'pull --rebase --stat'
 fi
 
+if which jenv &> /dev/null
+then
+    export PATH="$HOME/.jenv/bin:$PATH"
+    eval "$(jenv init -)"
+    export JAVA_HOME="$HOME/.jenv/versions/$(jenv version-name)"
+fi
+
 function gdiff()
 {
     git diff --no-color | gist -t diff

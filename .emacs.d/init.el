@@ -23,12 +23,12 @@
              '("melpa" . "https://melpa.org/packages/"))
 (add-to-list 'package-archives
              '("melpa stable" . "https://stable.melpa.org/packages/") t)
-(when (< emacs-major-version 24)
-  ;; For important compatibility libraries like cl-lib
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(add-to-list 'package-archives
+	     '("gnu" . "http://elpa.gnu.org/packages/") t)
 
 (setq package-list
       '(bazel-mode
+	company
         dash
         dockerfile-mode
         epl
@@ -43,7 +43,8 @@
         json-snatcher
         jsonnet-mode
         let-alist
-        php-mode
+        markdown-mode
+        meghanada
         pkg-info
         powerline
         python-docstring
@@ -72,9 +73,22 @@
 ;; Modes                                             ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(require 'php-mode)
-
 (require 'web-mode)
+
+;; java IDE-lite
+(require 'meghanada)
+(add-hook 'java-mode-hook
+          (lambda ()
+            ;; meghanada-mode on
+            (meghanada-mode t)
+            (meghanada-telemetry-enable f)
+            (smartparens-mode t)
+            (rainbow-delimiters-mode t)
+            (highlight-symbol-mode t)
+            (flycheck-mode +1)))
+
+(setq meghanada-java-path "java")
+(setq meghanada-maven-path "mvn")
 
 ;; set web mode for .mustach files
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
@@ -86,11 +100,14 @@
 
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
+;; turn on company ("complete anything") mode for all files
+(add-hook 'after-init-hook 'global-company-mode)
+
 ;; turn on flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; dont syntax check this file
-(setq-default flycheck-disabled-checkers '(emacs-lisp emacs-lisp-checkdoc php-phpcs php-phpmd))
+(setq-default flycheck-disabled-checkers '(emacs-lisp emacs-lisp-checkdoc))
 
 (eval-after-load "flycheck"
   '(add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
@@ -188,8 +205,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector ["#3c3836" "#fb4933" "#b8bb26" "#fabd2f" "#83a598" "#d3869b" "#8ec07c" "#ebdbb2"])
- '(custom-safe-themes (quote ("2a9039b093df61e4517302f40ebaf2d3e95215cb2f9684c8c1a446659ee226b9" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
+ '(ansi-color-names-vector
+   ["#3c3836" "#fb4933" "#b8bb26" "#fabd2f" "#83a598" "#d3869b" "#8ec07c" "#ebdbb2"])
+ '(custom-safe-themes
+   (quote
+    ("2a9039b093df61e4517302f40ebaf2d3e95215cb2f9684c8c1a446659ee226b9" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
+ '(package-selected-packages
+   (quote
+    (markdown-mode company-mode yaml-mode web-mode terraform-mode solarized-theme smart-mode-line scala-mode python-docstring powerline php-mode monokai-theme meghanada jsonnet-mode json-mode gruvbox-theme groovy-mode go-mode flycheck-color-mode-line dockerfile-mode darkokai-theme bazel-mode)))
  '(pdf-view-midnight-colors (quote ("#fdf4c1" . "#282828"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
