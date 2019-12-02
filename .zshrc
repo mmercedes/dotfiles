@@ -16,13 +16,14 @@ source $ZSH/oh-my-zsh.sh
 if [[ "$(uname -s)" == "Darwin" ]]; then
     export PATH=/usr/local/bin:$PATH
     export GOPATH=$HOME/development/go
+    alias emacs='/usr/local/bin/emacs'
     alias ls='ls -Gah'
 else
     alias ls='ls -Gah --color=always'
     export GREP_OPTIONS='--exclude=*.pyc --exclude-dir=.git'
 fi
 
-alias e='emacs'
+alias e='emacsclient -nw'
 alias todo='task'
 
 if which kubectl &> /dev/null
