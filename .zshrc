@@ -34,10 +34,14 @@ fi
 
 if which git &> /dev/null
 then
-    git config --global alias.st 'status'
+    git config --global alias.c 'checkout'
+    git config --global alias.cp 'cherry-pick'
     git config --global alias.d 'diff'
     git config --global alias.ds 'diff --staged'
     git config --global alias.rpull 'pull --rebase --stat'
+    git config --global alias.prull 'pull --rebase --stat'
+    git config --global alias.s 'status'
+    git config --global alias.st 'status'
 fi
 
 if which jenv &> /dev/null
