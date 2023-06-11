@@ -27,7 +27,7 @@
 	     '("gnu" . "http://elpa.gnu.org/packages/") t)
 
 (setq package-list
-      '(bazel-mode
+      '(cl-lib
 	company
         dash
         dockerfile-mode
@@ -38,15 +38,17 @@
         groovy-mode
         gruvbox-theme
         hcl-mode
+        helm
+        jinja2-mode
         json-mode
         json-reformat
         json-snatcher
         jsonnet-mode
         let-alist
         markdown-mode
-        meghanada
         pkg-info
         powerline
+        protobuf-mode
         python-docstring
         rich-minority
         s
@@ -54,6 +56,7 @@
         seq
         smart-mode-line
         terraform-mode
+        typescript-mode
         web-mode
         yaml-mode))
 
@@ -75,20 +78,10 @@
 
 (require 'web-mode)
 
-;; java IDE-lite
-(require 'meghanada)
-(add-hook 'java-mode-hook
-          (lambda ()
-            ;; meghanada-mode on
-            (meghanada-mode t)
-            (meghanada-telemetry-enable f)
-            (smartparens-mode t)
-            (rainbow-delimiters-mode t)
-            (highlight-symbol-mode t)
-            (flycheck-mode +1)))
-
-(setq meghanada-java-path "java")
-(setq meghanada-maven-path "mvn")
+(helm-mode 1)
+(set-face-attribute 'helm-selection nil 
+                    :background "#B16286"
+                    :foreground "#FFFFFF")
 
 ;; set web mode for .mustach files
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
@@ -97,6 +90,10 @@
 (add-to-list 'auto-mode-alist '("\\.toml\\'" . conf-mode))
 
 (add-to-list 'auto-mode-alist '("\\.bazel\\'" . bazel-mode))
+
+(add-to-list 'auto-mode-alist '("\\.plist\\'" . xml-mode))
+
+(add-to-list 'auto-mode-alist '("\\.proto\\'" . protobuf-mode))
 
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
@@ -171,11 +168,26 @@
             (setq indent-tabs-mode 1)
             (setq tab-width 4)))
 
+;; override typescript indent
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
+(setq indent-line-function 'insert-tab)
+
+;; set default font
+(add-to-list 'default-frame-alist '(font . "Roboto Mono" ))
+(set-face-attribute 'default t :font "Roboto Mono" )
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Keybinds                                          ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (global-set-key [(control j)] 'goto-line)
+
+(global-set-key (kbd "C-x C-r") 'query-replace-regexp)
+
+;; use helm for common commands
+(global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
 
 ;; map C-t to switching to terminal, creating one if none exists
 (defun switch-to-term ()
@@ -205,15 +217,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector
-   ["#3c3836" "#fb4933" "#b8bb26" "#fabd2f" "#83a598" "#d3869b" "#8ec07c" "#ebdbb2"])
  '(custom-safe-themes
-   (quote
-    ("2a9039b093df61e4517302f40ebaf2d3e95215cb2f9684c8c1a446659ee226b9" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
- '(package-selected-packages
-   (quote
-    (markdown-mode company-mode yaml-mode web-mode terraform-mode solarized-theme smart-mode-line scala-mode python-docstring powerline php-mode monokai-theme meghanada jsonnet-mode json-mode gruvbox-theme groovy-mode go-mode flycheck-color-mode-line dockerfile-mode darkokai-theme bazel-mode)))
- '(pdf-view-midnight-colors (quote ("#fdf4c1" . "#282828"))))
+  '("a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

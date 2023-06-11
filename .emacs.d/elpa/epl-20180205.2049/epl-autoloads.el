@@ -1,15 +1,18 @@
-;;; epl-autoloads.el --- automatically extracted autoloads
+;;; epl-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/epl-20180205.2049/epl-pkg.el"
-;;;;;;  "../../../../.emacs.d/elpa/epl-20180205.2049/epl.el") (23647
-;;;;;;  21492 236774 12000))
+;;;### (autoloads nil "epl" "epl.el" (0 0 0 0))
+;;; Generated autoloads from epl.el
+
+(register-definition-prefixes "epl" '("epl-"))
 
 ;;;***
 
-(provide 'epl-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t

@@ -1,5 +1,10 @@
 #!/bin/bash
 
+###
+# Instal brew packages:
+# 
+##
+
 if [ -e "$(pwd)/.oh-my-zsh/custom/plugins" ]; then
     echo "linking ./zsh_plugins to ./.oh-my-zsh/custom/plugins"
     ln -sf ./zsh_plugins/* ./.oh-my-zsh/custom/plugins/
