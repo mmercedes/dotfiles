@@ -3,3 +3,9 @@
 .emacs.d/auto-save-list
 .emacs.d/.emacs.desktop
 .emacs.d/.emacs.desktop.lock
+.emacs.d/workspace/
+.emacs.d/recentf
+.emacs.d/.cache/
+.emacs.d/.dap-breakpoints
+.emacs.d/.lsp-session-v1
+.emacs.d/eclipse.jdt.ls/

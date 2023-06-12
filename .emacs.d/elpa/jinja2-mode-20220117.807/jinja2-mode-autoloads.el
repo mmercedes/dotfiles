@@ -22,6 +22,10 @@ Major mode for editing jinja2 files
 
 ;;;***
 
+;;;### (autoloads nil nil ("jinja2-mode-pkg.el") (0 0 0 0))
+
+;;;***
+
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t

@@ -22,6 +22,10 @@ and `json-reformat:pretty-string?'.
 
 ;;;***
 
+;;;### (autoloads nil nil ("json-reformat-pkg.el") (0 0 0 0))
+
+;;;***
+
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t

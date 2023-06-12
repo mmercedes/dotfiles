@@ -38,6 +38,10 @@ Reformat entire buffer using the Jsonnet format utility." t nil)
 
 ;;;***
 
+;;;### (autoloads nil nil ("jsonnet-mode-pkg.el") (0 0 0 0))
+
+;;;***
+
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t

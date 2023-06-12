@@ -36,6 +36,7 @@ fi
 
 if which git &> /dev/null
 then
+    git config --global core.excludesfile ~/.gitignore
     git config --global alias.c 'checkout'
     git config --global alias.cp 'cherry-pick'
     git config --global alias.d 'diff'
