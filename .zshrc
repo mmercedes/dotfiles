@@ -1,4 +1,4 @@
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -15,9 +15,10 @@ source $ZSH/oh-my-zsh.sh
 
 # mac vs linux exclusives
 if [[ "$(uname -s)" == "Darwin" ]]; then
-    export PATH=/usr/local/bin:$PATH
+    export PATH="/usr/local/bin:$PATH"
+    export PATH="/opt/homebrew/bin:$PATH"
     export GOPATH=$HOME/development/go
-    alias emacs='/usr/local/bin/emacs'
+    #alias emacs='/usr/local/bin/emacs'
     alias ls='ls -Gah'
     alias stat='stat -x'
 else
@@ -36,12 +37,13 @@ fi
 
 if which git &> /dev/null
 then
-    git config --global core.excludesfile ~/.gitignore
+    git config --global core.excludesfile ~/.gitignore_global
     git config --global alias.c 'checkout'
     git config --global alias.cp 'cherry-pick'
     git config --global alias.d 'diff'
     git config --global alias.ds 'diff --staged'
     git config --global alias.rpull 'pull --rebase --stat'
+    git config --global alias.rp 'pull --rebase --stat'    
     git config --global alias.prull 'pull --rebase --stat'
     git config --global alias.s 'status'
     git config --global alias.st 'status'
@@ -93,16 +95,18 @@ function color() {
 # TODO implement this
 # emacsclient --insert <(<command>)
 
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-export HISTTIMEFORMAT='%F %T  '
+# write history immediately, not when shell closes
+setopt INC_APPEND_HISTORY
+# skip duplicates when searching through history
+setopt HIST_FIND_NO_DUPS
+# write timestamp of command plus increase history size
+export HISTTIMEFORMAT='[%F %T]  '
+export HISTFILE=~/.zsh_history
+export HISTFILESIZE=1000000000
+export HISTSIZE=1000000000
 
 plugins=( zsh-syntax-highlighting )
 
-##########################################
-# UNCOMitted
-##########################################
  alias cbt='/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/cbt'
 
 export NVM_DIR="$HOME/.nvm"
@@ -112,3 +116,10 @@ export NVM_DIR="$HOME/.nvm"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mmercedes/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mmercedes/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mmercedes/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mmercedes/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH=/opt/spotify-devex/bin:$PATH

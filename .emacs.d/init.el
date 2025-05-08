@@ -49,6 +49,7 @@
         json-snatcher
         jsonnet-mode
         let-alist
+        ligature
         lsp-java
         lsp-mode
         lsp-treemacs
@@ -67,7 +68,8 @@
         typescript-mode
 	use-package
         web-mode
-        yaml-mode))
+        yaml-mode
+        yasnippet))
 
 ; activate all the packages
 (package-initialize)
@@ -80,6 +82,15 @@
 (dolist (package package-list)
   (unless (package-installed-p package)
     (package-install package)))
+
+(use-package ultra-scroll
+  ;:load-path "~/code/emacs/ultra-scroll" ; if you git clone'd instead of using vc
+  :vc (:url "https://github.com/jdtsmith/ultra-scroll") ; For Emacs>=30
+  :init
+  (setq scroll-conservatively 3 ; or whatever value you prefer, since v0.4
+        scroll-margin 0)        ; important: scroll-margin>0 not yet supported
+  :config
+  (ultra-scroll-mode 1))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Modes                                             ;;
@@ -172,7 +183,7 @@
   :config
   (lsp-treemacs-sync-mode 1))
 
-(setenv "JAVA_HOME" "/Users/mmercedes/.jenv/versions/17")
+(setenv "JAVA_HOME" "/Users/mmercedes/.jenv/versions/17.0")
 
 (use-package lsp-java
   :hook (java-mode . lsp-deferred)
@@ -181,12 +192,12 @@
   (setq
    ;; lsp-java-jdt-download-url "https://www.eclipse.org/downloads/download.php?file=/jdtls/snapshots/jdt-language-server-latest.tar.gz"
    lsp-java-completion-max-results 10
-   lsp-java-configuration-runtimes '[(:name "JavaSE-17" :path "/Users/mmercedes/.jenv/versions/17" :default t)]
+   lsp-java-configuration-runtimes '[(:name "JavaSE-17" :path "/Users/mmercedes/.jenv/versions/17.0" :default t)]
    lsp-java-vmargs '( "-noverify"
                       "-Xmx2048m"
                       "-XX:+UseG1GC"
                       "-XX:+UseStringDeduplication")
-   lsp-java-java-path "/Users/mmercedes/.jenv/versions/17/bin/java")
+   lsp-java-java-path "/Users/mmercedes/.jenv/versions/17.0/bin/java")
 
   (lsp-register-custom-settings `(("java.inlayHints.parameterNames.enabled" "literals" "literals"))))
 
@@ -240,6 +251,7 @@
 (menu-bar-mode -1)
 
 ;; show line numbers in left margin
+(require 'linum)
 (global-linum-mode 1)
 (setq linum-format "%3d \u2502 ")
 
@@ -284,7 +296,10 @@
 (setq-default tab-width 2)
 (setq indent-line-function 'insert-tab)
 
-;; set default font
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Font                                              ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (add-to-list 'default-frame-alist '(font . "Roboto Mono" ))
 (set-face-attribute 'default t :font "Roboto Mono" )
 
@@ -325,9 +340,13 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default))
- '(package-selected-packages
-   '(yaml-mode web-mode typescript-mode terraform-mode smart-mode-line scala-mode rich-minority python-docstring protobuf-mode powerline markdown-mode jsonnet-mode json-reformat json-mode jinja2-mode helm hcl-mode gruvbox-theme groovy-mode go-mode flycheck-color-mode-line flycheck epl dockerfile-mode dash company)))
+  '("45631691477ddee3df12013e718689dafa607771e7fd37ebc6c6eb9529a8ede5"
+    "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e"
+    default))
+ '(package-selected-packages nil)
+ '(package-vc-selected-packages
+  '((ultra-scroll :vc-backend Git :url
+                  "https://github.com/jdtsmith/ultra-scroll"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
