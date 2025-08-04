@@ -38,7 +38,9 @@ fi
 if which git &> /dev/null
 then
     git config --global core.excludesfile ~/.gitignore_global
+    git config --global alias.au 'add -u'
     git config --global alias.c 'checkout'
+    git config --global alias.cb 'checkout -b'    
     git config --global alias.cp 'cherry-pick'
     git config --global alias.d 'diff'
     git config --global alias.ds 'diff --staged'
@@ -123,3 +125,7 @@ if [ -f '/Users/mmercedes/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/U
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/mmercedes/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mmercedes/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH=/opt/spotify-devex/bin:$PATH
+
+# TODO: dont hardcode the path for mac + version
+source /opt/homebrew/Cellar/fzf/0.62.0/shell/completion.zsh
+source /opt/homebrew/Cellar/fzf/0.62.0/shell/key-bindings.zsh
